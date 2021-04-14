@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link rel="stylesheet" href="swiper-4.3.3.min.css">
+		<style>
+			*{
+				margin: 0;padding: 0;
+			}
+			.swiper-container{
+				width: 500px;
+				height: 400px;
+			}
+			img{
+				width: 500px;
+				height: 400px;
+			}
+			.swiper-slide{
+				width:100%;
+				height:100%;
+			}
+			.swiper-pagination-bullet{
+				width: 20px;
+				height: 20px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="swiper-container">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide"><img src="../12.12jq%20dom%20操作/img/图1.jpg" alt=""></div>
+				<div class="swiper-slide"><img src="../12.12jq%20dom%20操作/img/图4.jpg" ></div>
+				<div class="swiper-slide"><img src="../12.12jq%20dom%20操作/img/图7.jpg" ></div>
+			</div>
+			<div class="swiper-button-prev"></div>
+			<div class="swiper-button-next"></div>
+			<div class="swiper-pagination"></div>
+			<div class="swiper-scrollbar"></div>
+		</div>
+		
+
+		<!--
+			最外层容器：swiper-container
+			包裹轮播内容的容器：swiper-wrapper
+			轮播的每一项：swiper-slide
+		 -->
+	</body>
+	<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+	<script src="swiper-4.3.3.min.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		var mySwiper=new Swiper(".swiper-container",{
+			autoplay:true,//自动播放
+			// autoplay:false  鼠标滑动
+			// loop:true,//无缝切换
+			effect:"cube",
+			// effect:"flip",
+			// effect:"coverflow",//轮播效果
+			// effect:"fade",
+			direction:"vertical",//设置轮播方向：horizeontal水平的    vertical垂直的
+			speed:1000,//速度,相当于设置的transition
+			grabCursor:true,//设置拖动时是否改变鼠标状态
+			navigation:{
+				nextEl:".swiper-button-next",
+				prevEl:".swiper-button-prev",
+				//表示前后切换的按钮的选择器
+			},
+			autoplay:{
+				delay:1000,//设置自动切换的时间
+				disableOnInteraction:false,//操作轮播后是否自动播放,默认是true,操作后不自动轮播
+			},
+			pagination:{
+				el:".swiper-pagination",//小圆点
+				//el知道选择器是哪个
+				clickable:true,//点击小圆点
+				// type:"progressbar"//设置分页器样式  progressbar进去条样式,bullets默认圆点,fraction:数字
+			},
+			scrollbar:{//设置滚动条
+				el:".swiper-scrollbar",
+				draggable:true//设置是否可以拖动
+			},
+			on:{
+				slideChange:function(){//轮播切换时触发的事件
+					console.log(this.activeIndex)//this.activeIndex:获取当前展示的轮播图的序号
+				}
+			}
+		})
+		// new Swiper传两个参数,第一个参数是轮播最大的容器的选择器,第二个参数是一个对象,表示轮播的设置属性
+	</script>
+</html>
