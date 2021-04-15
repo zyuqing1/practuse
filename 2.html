@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>2</title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		li{
+			list-style:none;
+		}
+		.wrap{
+			position:relative;
+			height: 560px;
+   			width: 1280px;
+   			margin:0 auto;
+   			position:0.5s;
+		}
+		.wrap li{
+			position:relative;
+			cursor:pointer;	
+			width: 17%;
+			height: 560px;
+			float:left;
+			position:0.5s;
+		}
+		.tp{
+			margin:10px auto;
+			width: 40px;
+			height: 40px;
+			background-image:url("img/dd.png");
+		}
+		.tp1{
+			background-position:0px 0px;
+		}
+		.tp2{
+			background-position:-40px 0px;
+		}
+		.tp3{
+			background-position:-80px 0px;
+		}
+		.tp4{
+			background-position:-120px 0px;
+		}
+		.top{
+			border:1px solid transparent;
+			border-left: 1px solid #3285c0;
+			width: 100%;
+			height: 132px;
+			background:#1b77b9;
+		}
+		.top h3{
+			font-size:22px;
+			color:#fff;
+			text-align:center;
+		}
+		.top p{
+			text-align:center;
+			color:#fff;
+			font-size:14px;
+		}
+		.bottom{
+			width: 100%;
+			height: 428px;
+		}
+		.d{
+			height: 50px;
+		}
+		.ts{
+			box-shadow:0px 0px 12px #464646;
+			background:rgb(233,233,233);
+			height: 560px;
+			z-index:9;
+		}
+		.top1{
+			background:rgb(0,179,236);
+			padding-top:15px;
+		}
+		.bottom1{
+			background:#fff;
+		}
+		.tuo{
+			padding-top:20px;
+		}
+		.tuo p{
+			width: 100%;
+			height: 80px;
+			line-height:80px;
+			color:rgb(56,83,67);
+			text-align:center;
+		}
+		.big{
+			width: 100%;
+			height: 428px;
+			display:none;
+			padding-top:26px;
+		}
+		.duo{
+			margin:0 auto;
+			width: 565px;
+			height: 376px;
+			background:#fff;
+			/*transition:0.2s;*/
+		}
+		.duo-top{
+			width: 100%;
+			height: 213px;
+		}
+		.duo-top h6{
+			font-size: 18px;
+			line-height: 28px;
+			margin-bottom: 10px;
+			color: #3db1ea;
+		}
+		#top-qye{
+			font-size:12px;
+			color: #232933;
+			margin:5px 0px;
+		}
+		#top-qye1{
+			color: #8c8c8c;
+			font-size: 12px;
+			line-height: 22px;
+			height: 44px;
+			width: 530px;
+			margin:15px 0px 5px 0px;
+		}
+		.duo-bottom{
+			width: 100%;
+			height: 70px;
+		}
+		input{
+			margin-top:30px;
+			width: 160px;
+			height: 38px;
+			color:#fff;
+			border:1px solid #3db1ea;
+			outline:none;
+			cursor:pointer;
+			background:#3db1ea;
+			border-radius:16px;
+			margin-right:22px;
+		}
+		#qk{
+			line-height:38px;
+			text-align:center;
+			display:inline-block;
+			margin-top:30px;
+			width: 160px;
+			height: 38px;
+			color:#fff;
+			outline:none;
+			cursor:pointer;
+			border-radius:16px;
+			margin-right:22px;
+		}
+		.la{
+			padding:10px 0px 0px 15px;
+			float:left;
+			width: 27%;
+			height: 70px;
+			font-weight: 400;
+			color: #000;
+			background:rgb(243,243,243);
+			margin: 13px 0 0 0;
+		}
+		.la h6{
+			font-size: 16px;
+			color:rgb(90,90,90);
+		}
+		.la p{
+			margin:10px 0;
+			font-size: 12px;
+			color:#999;
+		}
+		.la:hover{
+			background:#3db1ea;
+		}
+		.la:hover h6{
+			color:#fff;
+		}
+		.la:hover p{
+			color:#fff;
+		}
+	</style>
+</head>
+<body>
+	<div class="d"></div>
+	<div class="da">
+		<ul class="wrap">
+			<li class="ts" style="transform:scale(1.1); width:49%;">
+				<div class="qb">
+					<div class="top top1">
+						<div class="tp tp1"></div>
+						<h3>网站与门户</h3>
+						<p>连接内外 覆盖多端</p>
+					</div>
+					<div class="bottom bottom1">
+						<div class="tuo" style="display:none">
+							<p>全网门户</p>
+							<p>企业域名</p>
+						</div>
+						<div class="big" style="display:block">
+							<div class="duo">
+								<div class="duo-top">
+									<h6>全网门户</h6>
+									<p id="top-qye">全网企业客户触达、获取商机、达成业务</p>
+									<p id="top-qye1">使用企业门户进行客户信息管理、销售线索管理，让您随时随地更轻松地获取新的潜在客户，更快捷地完成业务。</p>
+									<input type="button" value="了解详情">
+								</div>
+								<div class="duo-bottom">
+									<div class="la">
+										<h6>企业域名</h6>
+										<p>注域名，享安全服务</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li style="background:skyblue; background:rgb(225,225,225);">
+				<div class="qb">
+					<div class="top">
+						<div class="tp tp2"></div>
+						<h3>营销与推广</h3>
+						<p>全景覆盖 经济之选</p>
+					</div>
+					<div class="bottom">
+						<div class="tuo">
+							<p>行销宝</p>
+							<p>大把推</p>
+							<p>易米通</p>
+							<p>Google Adwords</p>
+						</div>
+						<div class="big">
+							<div class="duo">
+								<div class="duo-top">
+									<h6>营销宝</h6>
+									<p id="top-qye">多场景营销智能工具集</p>
+									<p id="top-qye1">使用中企营销宝进行营销，不论是活动组织、营销推广，还是企业宣传、产品售卖、热点跟踪，让您随时随地便捷的开展营销，提升品牌形象与影响力。</p>
+									<input type="button" value="了解详情">
+								</div>
+								<div class="duo-bottom">
+									<div class="la" style="margin-right:20px;">
+										<h6>行销宝</h6>
+										<p>注域名，享安全服务</p>
+									</div>
+									<div class="la" style="margin-right:20px;">
+										<h6>大把推</h6>
+										<p>国内创新的数字营销平台</p>
+									</div>
+									<div class="la" style="margin-right:20px;">
+										<h6>易米通</h6>
+										<p>助力您的海外拓金之路</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li style="background:green; background:rgb(233,233,233);">
+				<div class="qb">
+					<div class="top">
+						<div class="tp tp3"></div>
+						<h3>电商与业务</h3>
+						<p>在线业务 轻松实现</p>
+					</div>
+					<div class="bottom">
+						<div class="tuo">
+							<p>ZshopS</p>
+						</div>
+						<div class="big">
+							<div class="duo">
+								<div class="duo-top">
+									<h6>ZshopS</h6>
+									<p id="top-qye">为中小企业搭建独立电商平台，提供行业电商解决方案。</p>
+									<p id="top-qye1">商城提供安全稳定、易用高效的在线零售管理系统，后台简单易用，购物体验流畅，促销方式灵活，数据统计分析嵌入业务各个环节，随时随地呈现统计结果指导决策。帮助传统企业顺利开展线上零售业务，强化数字分析与营销推广，降低业务成本，树立企业品牌，扩大企业收益渠道。</p>
+									<input type="button" value="了解详情">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li style="background:pink; background:rgb(225,225,225);">
+				<div class="qb">
+					<div class="top">
+						<div class="tp tp4"></div>
+						<h3>协同与管理</h3>
+						<p>连接互通 简便开放</p>
+					</div>
+					<div class="bottom">
+						<div class="tuo">
+							<p>Z云邮</p>
+							<p>有翼云销</p>
+						</div>
+						<div class="big">
+							<div class="duo">
+								<div class="duo-top">
+									<h6>Z云邮</h6>
+									<p id="top-qye">专注企业办公效率的提升，云“游”四海的企业邮箱</p>
+									<p id="top-qye1">帮企业提高工作效率的企业邮箱：支持微信收发信件、超大企业共享网盘，多维度的邮箱管理功能等。并且，在海外部署了多达34个收发节点，国内部署节点28个，让企业的重要邮件，全球畅“游”。</p>
+									<input type="button" value="了解详情"><botton id="qk" style="border:1px solid #3db1ea;background:#fff; color:#3db1ea;">立即使用</botton>
+								</div>
+								<div class="duo-bottom">
+									<div class="la">
+										<h6>有翼云销</h6>
+										<p>注域名，享安全服务</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</li>
+		</ul>
+	</div>
+</body>
+<script>
+	var iPt=document.querySelectorAll('input')
+	var aQk=document.getElementById("qk") 
+	var wrap=document.getElementsByClassName('wrap')[0]
+	var aLi=wrap.getElementsByTagName('li')
+	var bom=document.querySelectorAll('.bottom')
+	var aTop=document.querySelectorAll('.top')
+	var aTuo=document.querySelectorAll('.tuo')
+	var aBig=document.querySelectorAll('.big')
+	aQk.onmouseover=function(){
+		aQk.style.background="#3db1ea"
+		aQk.style.color="#fff"
+	}
+	aQk.onmouseout=function(){
+		aQk.style.background="#fff"
+		aQk.style.color="#3db1ea"
+	}
+	for(var j=0; j<iPt.length; j++){
+		iPt[j].onmouseover=function(){
+			this.style.border="1px solid rgb(0,120,185)"
+			this.style.background="rgb(0,120,185)"
+		}
+		iPt[j].onmouseout=function(){
+			this.style.border="#3db1ea"
+			this.style.background="#3db1ea"
+		}
+	}
+	for(var i=0; i<aLi.length; i++){
+		aLi[i].index=i
+		aLi[i].onmouseover=function(){
+			for(var i=0; i<aLi.length; i++){
+				aLi[i].style.width="17%"
+				bom[i].style.background="transparent"
+				aLi[i].style.zIndex="9"
+				aLi[i].style.boxShadow="12px 12px 24px 2px transparent"
+				aTop[i].style.borderLeft="1px solid #3285c0"
+				aTop[i].style.background="#1b77b9"
+				aLi[i].style.transform="scale(1)"
+				aTop[i].style.paddingTop="0px"
+				aBig[i].style.display="none"
+				aTuo[i].style.display="block"
+			}
+			bom[this.index].style.background="#fff"
+			this.style.width="49%"
+			this.style.boxShadow="0px 0px 12px #464646"
+			this.style.zIndex="999"
+			aTop[this.index].style.background="rgb(0,179,236)"
+			aTop[this.index].style.borderLeft="none"
+			this.style.transform="scale(1.1)"
+			aTop[this.index].style.paddingTop="14px"
+			// this.style.transition="0.5s"
+			aBig[this.index].style.display="block"
+			aTuo[this.index].style.display="none"
+		}
+	}
+</script>
+</html>
